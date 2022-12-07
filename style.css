@@ -1,14 +1,14 @@
-.calculator {
+.marge {
     font-family: Roboto, sans-serif;
 }
 
-.calculating__marge {
+.marge__calculating {
     margin: auto;
     text-align: center;
     font-size: 18px;
 }
 
-.calculating__marge__name p{
+.marge__name p{
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: .25em;
@@ -16,25 +16,23 @@
     padding: 15px;
     position: relative;
 }
-.calculating__marge__name p:hover::after {
+.marge__name p:hover::after {
     width: 100%;
     right: 0;
 }
-.calculating__marge__name p::after {
-    background: none repeat scroll 0 0 transparent;
+.marge__name p::after {
     bottom: 0;
     content: "";
     display: block;
     height: 4px;
     right: 0;
     position: absolute;
-    background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
     transition: width .5s ease 0s, right .5s ease 0s;
     width: 0;
 }
 
 
-.calculating__marge input {
+.marge__calculating input {
     margin: auto;
     padding: 5px 10px;
     display: flex;
@@ -47,37 +45,6 @@
     box-shadow: 5px 5px 10px rgba(0,0,0, .2);
 }
 
-.calculating__result span{
+.marge__result span{
     padding-top: 10px;
-}
-
-.calculating__percent {
-    margin: auto;
-    text-align: center;
-    font-size: 18px;
-}
-
-.calculating__percent__name p{
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: .25em;
-    display: inline-block;
-    padding: 15px;
-    position: relative;
-}
-.calculating__percent__name p:hover::after {
-    width: 100%;
-    right: 0;
-}
-.calculating__percent__name p::after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 4px;
-    right: 0;
-    position: absolute;
-    background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
-    transition: width .5s ease 0s, right .5s ease 0s;
-    width: 0;
 }
