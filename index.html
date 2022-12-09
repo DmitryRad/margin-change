@@ -9,19 +9,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="marge">
-        <div class="marge__calculating">
-            <div class="marge__name"><p>Изменение наценки</p></div>
-            <div class="marge__field">
-                <input type="text" id="marge__current-price" placeholder="Текущая цена">
-                <input type="text" id="marge__current-percent" placeholder="Текущая наценка">
-                <input type="text" id="marge__new-percent" placeholder="Новая наценка">
+    <div class="wrapper">
+        <div class="calculating">
+            <div class="calculating__name"><p>Изменение наценки</p></div>
+            <div class="calculating__field">
+                <label for="current-marge-price">Текущая цена</label><input type="text" id="current-marge-price" placeholder="₽">
+                <label for="current-marge-percent">Текущая наценка</label><input type="text" id="current-marge-percent" placeholder="%">
+                <label for="new-marge-percent">Новая наценка</label><input type="text" id="new-marge-percent" placeholder="%">
             </div>
-            <div class="marge__subtitle">
+            <div class="calculating__marge-subtitle">
                 Новая наценка под <span></span>% равна:
             </div>
-            <div class="marge__result">
-                <b><span></span> руб. </b>
+            <div class="calculating__marge-result">
+                <b><span></span> ₽</b>
+            </div>
+        </div>
+
+        <div class="calculating">
+            <div class="calculating__name"><p>Расчет цены за л/кг</p></div>
+            <div class="calculating__field">
+                <label for="proportion-current-weight">Текущий объем/вес</label><input type="text" id="proportion-current-weight" placeholder="л/кг">
+                <label for="proportion-current-price">Продается по цене</label><input type="text" id="proportion-current-price" placeholder="₽">
+            </div>
+            <div class="calculating__price-of-one-result">
+                1 л/кг будет стоить: <span>____</span> ₽
+            </div>
+            <label for="proportion-new-weight">Новый объем/вес</label><input type="text" id="proportion-new-weight" placeholder="л/кг">
+            <div class="calculating__subtitle-piece">
+                <span>____</span> л/кг будет стоить:
+            </div>
+            <div class="calculating__price-of-piece-result">
+                <b><span>____</span> ₽</b>
             </div>
         </div>
     </div>
